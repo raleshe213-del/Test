@@ -1,12 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+public class PersonnelRoom extends Room {
+    private String name_of_employee;
 
-/**
- *
- * @author B0ba
- */
-public class PersonnelRoom {
+    public PersonnelRoom(int number, int cost, Service[] services, String name_of_employee){
+        super(number, cost, services);
+        this.name_of_employee = name_of_employee;
+    }
 
+    public PersonnelRoom(){
+        super();
+        this.name_of_employee = "Temp";
+    }
+
+    public String get_name_empl(){return name_of_employee;}
+    public void set_name_empl(String name){this.name_of_employee = name;}
 }
