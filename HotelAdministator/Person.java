@@ -1,12 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author B0ba
- */
 public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    public Person(){
+        this.name = "Temp";
+        this.age = 0;
+    }
+
+    public int get_age(){
+        return age;
+    }
+    public String get_name(){
+        return name;
+    }
+    public void set_age(int age){
+        this.age = age;
+    }
+    public void set_name(String name){
+        this.name = name;
+    }
 
 }
